@@ -22,3 +22,17 @@ public class TurmaDto
     public string AnoLetivo { get; set; } = "";
     public int VagasRestantes { get; set; }
 }
+
+public class TurmaRefDto
+{
+    public string Idioma { get; set; } = "";
+    public int Numero { get; set; }
+}
+
+public class TurmaResumoDto
+{
+    public int Id { get; set; }
+    public string Idioma { get; set; } = "";
+    public int Numero { get; set; }
+    public string AnoLetivo { get; set; } = "";
+}
