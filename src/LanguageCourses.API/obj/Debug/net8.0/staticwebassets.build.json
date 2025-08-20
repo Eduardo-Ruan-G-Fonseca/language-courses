@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ESr706XIqAanB11VeUO1pEoJMOVBdkdlSufCCMc1lYk=",
+  "Source": "LanguageCourses.API",
+  "BasePath": "_content/LanguageCourses.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
