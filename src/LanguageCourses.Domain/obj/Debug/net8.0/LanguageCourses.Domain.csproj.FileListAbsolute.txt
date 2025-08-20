@@ -5,6 +5,7 @@ C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Domain\obj\Debu
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Domain\obj\Debug\net8.0\LanguageCourses.Domain.AssemblyInfoInputs.cache
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Domain\obj\Debug\net8.0\LanguageCourses.Domain.AssemblyInfo.cs
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Domain\obj\Debug\net8.0\LanguageCourses.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Domain\obj\Debug\net8.0\LanguageCourses.Domain.sourcelink.json
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Domain\obj\Debug\net8.0\LanguageCourses.Domain.dll
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Domain\obj\Debug\net8.0\refint\LanguageCourses.Domain.dll
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Domain\obj\Debug\net8.0\LanguageCourses.Domain.pdb

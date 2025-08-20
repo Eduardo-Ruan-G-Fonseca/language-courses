@@ -61,7 +61,7 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[13.0.0, )"
+              "version": "[12.*, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -143,6 +143,9 @@
             "projectReferences": {
               "C:\\Users\\Ruan\\RiderProjects\\language-courses\\src\\LanguageCourses.Domain\\LanguageCourses.Domain.csproj": {
                 "projectPath": "C:\\Users\\Ruan\\RiderProjects\\language-courses\\src\\LanguageCourses.Domain\\LanguageCourses.Domain.csproj"
+              },
+              "C:\\Users\\Ruan\\RiderProjects\\language-courses\\src\\LanguageCourses.Infrastructure\\LanguageCourses.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Ruan\\RiderProjects\\language-courses\\src\\LanguageCourses.Infrastructure\\LanguageCourses.Infrastructure.csproj"
               }
             }
           }
@@ -169,7 +172,11 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[13.0.0, )"
+              "version": "[12.*, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             }
           },
           "imports": [

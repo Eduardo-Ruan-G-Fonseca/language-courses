@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LanguageCourses.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c76c7659b2ee01bc11ff3f557b4ff3246e522f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("LanguageCourses.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LanguageCourses.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

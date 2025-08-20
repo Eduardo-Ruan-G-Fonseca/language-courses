@@ -2,11 +2,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LanguageCourses.Domain\LanguageCourses.Domain.csproj" />
+    <ProjectReference Include="..\LanguageCourses.Infrastructure\LanguageCourses.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="12.0.0" />
-    <PackageReference Include="MediatR" Version="13.0.0" />
+    <PackageReference Include="MediatR" Version="12.*" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
   </ItemGroup>
 
   <PropertyGroup>

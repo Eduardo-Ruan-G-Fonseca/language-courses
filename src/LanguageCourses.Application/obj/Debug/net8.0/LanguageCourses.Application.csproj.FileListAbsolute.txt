@@ -2,12 +2,15 @@ C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\bin
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\bin\Debug\net8.0\LanguageCourses.Application.dll
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\bin\Debug\net8.0\LanguageCourses.Application.pdb
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\bin\Debug\net8.0\LanguageCourses.Domain.dll
+C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\bin\Debug\net8.0\LanguageCourses.Infrastructure.dll
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\bin\Debug\net8.0\LanguageCourses.Domain.pdb
+C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\bin\Debug\net8.0\LanguageCourses.Infrastructure.pdb
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\obj\Debug\net8.0\LanguageCourses.Application.csproj.AssemblyReference.cache
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\obj\Debug\net8.0\LanguageCourses.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\obj\Debug\net8.0\LanguageCourses.Application.AssemblyInfoInputs.cache
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\obj\Debug\net8.0\LanguageCourses.Application.AssemblyInfo.cs
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\obj\Debug\net8.0\LanguageCourses.Application.csproj.CoreCompileInputs.cache
+C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\obj\Debug\net8.0\LanguageCourses.Application.sourcelink.json
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\obj\Debug\net8.0\Language.D358F14A.Up2Date
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\obj\Debug\net8.0\LanguageCourses.Application.dll
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Application\obj\Debug\net8.0\refint\LanguageCourses.Application.dll

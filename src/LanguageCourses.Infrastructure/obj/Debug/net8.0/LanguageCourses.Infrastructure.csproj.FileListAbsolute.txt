@@ -9,6 +9,7 @@ C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Infrastructure\
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Infrastructure\obj\Debug\net8.0\LanguageCourses.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Infrastructure\obj\Debug\net8.0\LanguageCourses.Infrastructure.AssemblyInfo.cs
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Infrastructure\obj\Debug\net8.0\LanguageCourses.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Infrastructure\obj\Debug\net8.0\LanguageCourses.Infrastructure.sourcelink.json
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Infrastructure\obj\Debug\net8.0\Language.E9206204.Up2Date
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Infrastructure\obj\Debug\net8.0\LanguageCourses.Infrastructure.dll
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.Infrastructure\obj\Debug\net8.0\refint\LanguageCourses.Infrastructure.dll

@@ -139,6 +139,7 @@ C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.API\obj\Debug\n
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.API\obj\Debug\net8.0\LanguageCourses.API.csproj.CoreCompileInputs.cache
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.API\obj\Debug\net8.0\LanguageCourses.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.API\obj\Debug\net8.0\LanguageCourses.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.API\obj\Debug\net8.0\LanguageCourses.API.sourcelink.json
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.API\obj\Debug\net8.0\scopedcss\bundle\LanguageCourses.API.styles.css
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Ruan\RiderProjects\language-courses\src\LanguageCourses.API\obj\Debug\net8.0\staticwebassets.development.json
