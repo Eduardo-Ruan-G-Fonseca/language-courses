@@ -143,16 +143,62 @@ src/
 
 ### 🔄 Fluxo de Dados (CQRS + MediatR)
 
+### Fluxo de Dados (CQRS + MediatR)
+
 ```mermaid
-    A[Usuário / Cliente] --> B[API]
-    B --> C[MediatR]
-    C -->|Command| D[Command Handler]
-    C -->|Query| E[Query Handler]
-    D --> F[(Banco de Dados)]
-    E --> F[(Banco de Dados)]
-    D --> G[Resultado / Confirmação]
-    E --> G[Resultado / Dados]
-    G --> A
+flowchart LR
+  %% Direção mais ampla para leitura horizontal
+  %% Nós principais
+  user([Cliente / Swagger])
+  subgraph API
+    ctrl[[Controllers]]
+  end
+
+  subgraph Application [Application • CQRS + MediatR]
+    med{{MediatR}}
+    subgraph Commands
+      cmd[Command]
+      ch[Command Handler]
+    end
+    subgraph Queries
+      qry[Query]
+      qh[Query Handler]
+    end
+    val[FluentValidation]
+  end
+
+  subgraph Infrastructure
+    db[(EF Core\nDbContext)]
+    sql[(SQL Server)]
+  end
+
+  %% Fluxo
+  user --> ctrl
+  ctrl -->|IMediator.Send(...)| med
+
+  med -- Command --> cmd
+  cmd -->|Validação| val
+  val --> ch
+  ch --> db
+  db <--> sql
+  ch -->|DTO / ViewModel| ctrl
+
+  med -- Query --> qry
+  qry -->|Validação (quando aplicável)| val
+  val --> qh
+  qh --> db
+  qh -->|DTO / ViewModel| ctrl
+
+  ctrl --> user
+
+  %% Estilos
+  classDef core fill:#e3f2fd,stroke:#64b5f6,stroke-width:1px,rx:6,ry:6;
+  classDef process fill:#fff8e1,stroke:#ffb300,stroke-width:1px,rx:6,ry:6;
+  classDef storage fill:#f1f8e9,stroke:#81c784,stroke-width:1px,rx:6,ry:6;
+
+  class ctrl,med core;
+  class cmd,ch,qry,qh,val process;
+  class db,sql storage;
 ```
 - O usuário faz uma requisição.  
 - A API passa para o **MediatR**.  
