@@ -141,6 +141,12 @@ src/
 
 ---
 
+### População de Dados
+
+Após aplicar as migrations, é possível popular o banco com dados fictícios usando o script **PovoarBD**.
+
+---
+
 ###  Fluxo de Dados
 
 1. O **usuário** faz uma requisição para a API.  
