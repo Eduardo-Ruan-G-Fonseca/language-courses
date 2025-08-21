@@ -5,11 +5,28 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LanguageCourses.Application.Commands.Turmas;
 
+/// <summary>
+/// Manipulador responsável por processar o comando <see cref="UpdateTurmaCommand"/>.
+/// Atualiza os dados de uma turma existente no sistema.
+/// </summary>
 public class UpdateTurmaHandler : IRequestHandler<UpdateTurmaCommand, TurmaDto>
 {
     private readonly LanguageCoursesDbContext _db;
+
+    /// <summary>
+    /// Construtor que injeta o contexto do banco de dados.
+    /// </summary>
+    /// <param name="db">Instância do contexto <see cref="LanguageCoursesDbContext"/>.</param>
     public UpdateTurmaHandler(LanguageCoursesDbContext db) => _db = db;
 
+    /// <summary>
+    /// Processa o comando para atualização de uma turma.
+    /// </summary>
+    /// <param name="request">Comando contendo o identificador da turma e os novos dados.</param>
+    /// <param name="ct">Token de cancelamento.</param>
+    /// <returns>Um <see cref="TurmaDto"/> com os dados atualizados da turma.</returns>
+    /// <exception cref="KeyNotFoundException">Lançada caso a turma não seja encontrada.</exception>
+    /// <exception cref="InvalidOperationException">Lançada caso já exista outra turma com o mesmo idioma e número.</exception>
     public async Task<TurmaDto> Handle(UpdateTurmaCommand request, CancellationToken ct)
     {
         var turma = await _db.Turmas.Include(t => t.Matriculas)

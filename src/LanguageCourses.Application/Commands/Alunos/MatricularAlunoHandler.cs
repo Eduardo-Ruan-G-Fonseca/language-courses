@@ -5,11 +5,38 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LanguageCourses.Application.Commands.Alunos;
 
+/// <summary>
+/// Manipulador do comando <see cref="MatricularAlunoCommand"/>.
+/// Responsável por matricular um aluno em uma turma existente,
+/// garantindo as regras de negócio.
+/// </summary>
 public class MatricularAlunoHandler : IRequestHandler<MatricularAlunoCommand, AlunoDetalheDto>
 {
     private readonly LanguageCoursesDbContext _db;
+
+    /// <summary>
+    /// Construtor que injeta o contexto do banco de dados.
+    /// </summary>
+    /// <param name="db">Contexto de banco de dados da aplicação.</param>
     public MatricularAlunoHandler(LanguageCoursesDbContext db) => _db = db;
 
+    /// <summary>
+    /// Processa o comando de matrícula de um aluno.
+    /// </summary>
+    /// <param name="request">
+    /// Comando <see cref="MatricularAlunoCommand"/> contendo o <c>AlunoId</c> 
+    /// e os dados da matrícula (idioma e número da turma).
+    /// </param>
+    /// <param name="ct">Token de cancelamento da operação assíncrona.</param>
+    /// <returns>
+    /// Um <see cref="AlunoDetalheDto"/> atualizado com os dados do aluno e suas turmas após a matrícula.
+    /// </returns>
+    /// <exception cref="KeyNotFoundException">
+    /// Lançada se o aluno ou a turma especificada não forem encontrados.
+    /// </exception>
+    /// <exception cref="InvalidOperationException">
+    /// Lançada se o aluno já estiver matriculado na turma ou se a turma estiver lotada.
+    /// </exception>
     public async Task<AlunoDetalheDto> Handle(MatricularAlunoCommand request, CancellationToken ct)
     {
         var aluno = await _db.Alunos
@@ -44,8 +71,9 @@ public class MatricularAlunoHandler : IRequestHandler<MatricularAlunoCommand, Al
 
         await _db.SaveChangesAsync(ct);
 
-        // retorno
+        // recarregar as matrículas para retorno atualizado
         await _db.Entry(aluno).Collection(a => a.Matriculas).Query().Include(m => m.Turma).LoadAsync(ct);
+
         return new AlunoDetalheDto
         {
             Id = aluno.Id,
@@ -55,8 +83,14 @@ public class MatricularAlunoHandler : IRequestHandler<MatricularAlunoCommand, Al
             Idade = aluno.Idade,
             Turmas = aluno.Matriculas.Select(m => new TurmaResumoDto
             {
-                Id = m.Turma.Id, Idioma = m.Turma.Idioma, Numero = m.Turma.Numero, AnoLetivo = m.Turma.AnoLetivo
-            }).OrderBy(t => t.Idioma).ThenBy(t => t.Numero).ToList()
+                Id = m.Turma.Id,
+                Idioma = m.Turma.Idioma,
+                Numero = m.Turma.Numero,
+                AnoLetivo = m.Turma.AnoLetivo
+            })
+            .OrderBy(t => t.Idioma)
+            .ThenBy(t => t.Numero)
+            .ToList()
         };
     }
 }
