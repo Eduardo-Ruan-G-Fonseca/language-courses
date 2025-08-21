@@ -18,7 +18,7 @@
 
 ---
 
-## 📖 Descrição
+## Descrição
 O **LanguageCourses** é uma API para gerenciamento de alunos e turmas em cursos de idiomas.  
 O projeto segue boas práticas de **Clean Architecture** e foca em **escalabilidade** e **validações robustas**.
 
@@ -141,7 +141,7 @@ src/
 
 ---
 
-###  Fluxo de Dados (CQRS + MediatR)
+###  Fluxo de Dados
 
 1. O **usuário** faz uma requisição para a API.  
 2. A requisição chega no **Controller**, que não contém regra de negócio.  
